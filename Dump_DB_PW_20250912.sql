@@ -55,7 +55,7 @@ CREATE TABLE [dbo].[OrariTratte](
 )WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MezzoMezzoTrasporto]    Script Date: 13/07/2025 15:35:26 ******/
+/****** Object:  Table [dbo].[MezzoTrasporto]    Script Date: 13/07/2025 15:35:26 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -284,4 +284,5 @@ REFERENCES [dbo].[Cliente] ([Id])
 GO
 ALTER TABLE [dbo].[Viaggio] CHECK CONSTRAINT [FK_Viaggio_Cliente]
 GO
+
 
